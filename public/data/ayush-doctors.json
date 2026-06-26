@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "source": "Ministry of AYUSH, Government of India",
+    "last_updated": "2024-11-06T19:25:00+05:30",
+    "total_practitioners": 8,
+    "data_version": "1.1",
+    "harvested_by": "AYUSH Data Pipeline"
+  },
+  "practitioners": [
+    {
+      "id": "AYUSH-KA-2024-001",
+      "name": "Dr. Rajesh Kumar",
+      "qualification": "BAMS, MD (Ayurveda)",
+      "specialty": "Panchakarma Specialist",
+      "registration_number": "KAR/AYU/12345",
+      "phone": "+91-80-2345-6789",
+      "email": "rajesh.kumar@ayurwellness.com",
+      "address": "123, MG Road, Bangalore",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560001",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      },
+      "clinic_name": "Ayurvedic Wellness Center",
+      "experience_years": 15,
+      "languages": [
+        "English",
+        "Hindi",
+        "Kannada"
+      ],
+      "consultation_fee": 500,
+      "verified": true,
+      "last_updated": "2025-11-06T19:23:35.589108"
+    },
+    {
+      "id": "AYUSH-KA-2024-002",
+      "name": "Dr. Priya Sharma",
+      "qualification": "BAMS, PhD (Ayurveda)",
+      "specialty": "Women's Health & Fertility",
+      "registration_number": "KAR/AYU/23456",
+      "phone": "+91-80-3456-7890",
+      "email": "priya.sharma@shaktiayurveda.in",
+      "address": "456, Indiranagar, Bangalore",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560038",
+      "coordinates": {
+        "lat": 12.9784,
+        "lng": 77.6408
+      },
+      "clinic_name": "Shakti Ayurveda Clinic",
+      "experience_years": 12,
+      "languages": [
+        "English",
+        "Hindi",
+        "Tamil"
+      ],
+      "consultation_fee": 600,
+      "verified": true,
+      "last_updated": "2025-11-06T19:23:35.589108"
+    },
+    {
+      "id": "AYUSH-KA-2024-006",
+      "name": "Dr. Lakshmi Iyer",
+      "qualification": "BAMS, MD (Rasa Shastra)",
+      "specialty": "Herbal Medicine & Formulations",
+      "registration_number": "KAR/AYU/67890",
+      "phone": "+91-80-6789-0123",
+      "email": "lakshmi.iyer@herbalhealing.co.in",
+      "address": "987, Jayanagar, Bangalore",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560041",
+      "coordinates": {
+        "lat": 12.925,
+        "lng": 77.5838
+      },
+      "clinic_name": "Herbal Healing Center",
+      "experience_years": 14,
+      "languages": [
+        "English",
+        "Kannada",
+        "Tamil"
+      ],
+      "consultation_fee": 550,
+      "verified": true,
+      "last_updated": "2024-11-06T19:25:00+05:30"
+    },
+    {
+      "id": "AYUSH-KA-2024-007",
+      "name": "Dr. Suresh Rao",
+      "qualification": "BAMS, MD (Swasthavritta)",
+      "specialty": "Preventive Medicine & Lifestyle",
+      "registration_number": "KAR/AYU/78901",
+      "phone": "+91-80-7890-1234",
+      "email": "suresh.rao@wellnessayurveda.com",
+      "address": "234, Koramangala, Bangalore",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560034",
+      "coordinates": {
+        "lat": 12.9352,
+        "lng": 77.6245
+      },
+      "clinic_name": "Wellness Ayurveda Clinic",
+      "experience_years": 16,
+      "languages": ["English", "Kannada", "Hindi"],
+      "consultation_fee": 650,
+      "verified": true,
+      "last_updated": "2024-11-06T19:25:00+05:30"
+    },
+    {
+      "id": "AYUSH-KA-2024-008",
+      "name": "Dr. Meera Nayak",
+      "qualification": "BAMS, MD (Prasuti Tantra)",
+      "specialty": "Pregnancy & Postnatal Care",
+      "registration_number": "KAR/AYU/89012",
+      "phone": "+91-80-8901-2345",
+      "email": "meera.nayak@motherchildayurveda.in",
+      "address": "567, Whitefield, Bangalore",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560066",
+      "coordinates": {
+        "lat": 12.9698,
+        "lng": 77.7499
+      },
+      "clinic_name": "Mother & Child Ayurveda Center",
+      "experience_years": 11,
+      "languages": ["English", "Kannada", "Telugu"],
+      "consultation_fee": 700,
+      "verified": true,
+      "last_updated": "2024-11-06T19:25:00+05:30"
+    },
+    {
+      "id": "AYUSH-KA-2024-009",
+      "name": "Dr. Arun Kumar",
+      "qualification": "BAMS, MD (Shalakya Tantra)",
+      "specialty": "ENT & Eye Disorders",
+      "registration_number": "KAR/AYU/90123",
+      "phone": "+91-80-9012-3456",
+      "email": "arun.kumar@shalakya.clinic",
+      "address": "890, Malleshwaram, Bangalore",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560003",
+      "coordinates": {
+        "lat": 13.0067,
+        "lng": 77.5697
+      },
+      "clinic_name": "Shalakya Ayurveda Specialty Clinic",
+      "experience_years": 13,
+      "languages": ["English", "Kannada", "Tamil"],
+      "consultation_fee": 600,
+      "verified": true,
+      "last_updated": "2024-11-06T19:25:00+05:30"
+    },
+    {
+      "id": "AYUSH-KA-2024-010",
+      "name": "Dr. Kavitha Reddy",
+      "qualification": "BAMS, MD (Kaumarabhritya)",
+      "specialty": "Pediatric Ayurveda",
+      "registration_number": "KAR/AYU/01234",
+      "phone": "+91-80-0123-4567",
+      "email": "kavitha.reddy@kidsayurveda.com",
+      "address": "123, HSR Layout, Bangalore",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560102",
+      "coordinates": {
+        "lat": 12.9121,
+        "lng": 77.6446
+      },
+      "clinic_name": "Kids Ayurveda Care Center",
+      "experience_years": 9,
+      "languages": ["English", "Kannada", "Hindi"],
+      "consultation_fee": 550,
+      "verified": true,
+      "last_updated": "2024-11-06T19:25:00+05:30"
+    },
+    {
+      "id": "AYUSH-KA-2024-012",
+      "name": "Dr. Shwetha Shenoy",
+      "qualification": "BAMS, MD (Dravyaguna)",
+      "specialty": "Medicinal Plants & Pharmacology",
+      "registration_number": "KAR/AYU/22345",
+      "phone": "+91-836-234-5678",
+      "email": "shwetha.shenoy@herbalresearch.org",
+      "address": "789, Vidyanagar, Hubli",
+      "city": "Hubli",
+      "state": "Karnataka",
+      "pincode": "580021",
+      "coordinates": {
+        "lat": 15.3647,
+        "lng": 75.1240
+      },
+      "clinic_name": "Herbal Research & Wellness Center",
+      "experience_years": 12,
+      "languages": ["English", "Kannada", "Hindi"],
+      "consultation_fee": 500,
+      "verified": true,
+      "last_updated": "2024-11-06T19:25:00+05:30"
+    }
+  ]
+}
