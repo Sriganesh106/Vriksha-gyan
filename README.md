@@ -25,7 +25,7 @@ npm run dev
 ### 1. **Personalized Wellness Quiz**
 - AI-powered dosha analysis (Vata, Pitta, Kapha)
 - Customized herbal recommendations
-- Results saved to Firebase Realtime Database
+- Results saved to Supabase
 - Shareable wellness profiles
 
 ### 2. **AYUSH Doctor Directory**
@@ -55,7 +55,7 @@ npm run dev
 ### 6. **Interactive Quiz Game**
 - Educational plant knowledge quiz
 - Real-time leaderboard
-- Score tracking with Firebase
+- Score tracking with Supabase
 - Shareable achievement cards
 
 ---
@@ -66,7 +66,7 @@ npm run dev
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Animations:** Framer Motion
-- **Database:** Firebase Realtime Database
+- **Database:** Supabase
 - **AI:** Google Gemini 2.5 Flash
 - **Icons:** Lucide React
 - **AR:** WebAR (MyWebAR)
@@ -87,9 +87,8 @@ vriksha-gyan/
 │   │   ├── PlantQRGallery.tsx        # AR plant QR codes
 │   │   └── QuizGame.tsx              # Educational quiz
 │   ├── lib/
-│   │   ├── firebase.ts               # Firebase configuration
-│   │   ├── geminiAI.ts               # Gemini AI integration
-│   │   └── firebaseAuth.ts           # User authentication
+│   │   ├── supabase.ts               # Supabase configuration
+│   │   └── supabaseAuth.ts           # User authentication
 │   ├── data/
 │   │   ├── wellness-quiz.ts          # Wellness quiz data
 │   │   └── ayush-doctors.json        # Doctor database
@@ -107,7 +106,7 @@ vriksha-gyan/
 
 The app uses the following APIs (keys are configured):
 
-- **Firebase:** Realtime Database for storing quiz results
+- **Supabase:** Database for storing quiz results
 - **Google Gemini AI:** For chatbot and retreat planner
 - **Foursquare Places:** For location data (optional)
 
@@ -173,6 +172,4 @@ This project is built for educational and wellness purposes.
 
 For questions or feedback about Vriksha Gyan, please reach out through the platform.
 
----
 
-**Built with 🌿 for promoting traditional Ayurvedic wisdom in the digital age.**
