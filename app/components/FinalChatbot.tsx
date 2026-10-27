@@ -72,31 +72,23 @@ export default function FinalChatbot() {
     return null; // No smart response found, use AI
   };
 
-  const handleSendMessage = async () => {
-    if (!inputText.trim() || isTyping) return;
+  const handleSendMessage = async (textToSend?: string) => {
+    const text = (typeof textToSend === 'string' ? textToSend : inputText).trim();
+    if (!text || isTyping) return;
 
     const userMessage: Message = {
       id: Date.now().toString(),
-      text: inputText,
+      text: text,
       sender: 'user',
       timestamp: new Date()
     };
 
     setMessages(prev => [...prev, userMessage]);
-    const currentInput = inputText;
     setInputText('');
     setIsTyping(true);
 
     try {
-      // Check for smart responses first
-      const smartResponse = getSmartResponse(currentInput);
-      
-      let responseText: string;
-      if (smartResponse) {
-        responseText = smartResponse;
-      } else {
-        responseText = await getAyurvedicAIResponse(currentInput);
-      }
+      const responseText = await getAyurvedicAIResponse(text);
       
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
@@ -106,29 +98,24 @@ export default function FinalChatbot() {
       };
 
       setMessages(prev => [...prev, botMessage]);
-      // toast.success('🌿 Dr. Vaidya responded!');
     } catch (error) {
       console.error('Error getting AI response:', error);
       
       const fallbackMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: "🙏 Namaste! I'm Dr. Vaidya, experiencing some technical difficulties with my consultation system. However, I can still share some traditional plant wisdom!\n\n🌿 **Quick Remedies:**\n• **Tulsi** - Chew 2-3 leaves for immunity\n• **Ginger** - With honey for digestion\n• **Turmeric** - Golden milk for inflammation\n\nPlease try your question again, or ask about specific herbs!",
+        text: "🙏 Namaste! I'm Dr. Vaidya, experiencing some technical difficulties. Please try your question again!",
         sender: 'bot',
         timestamp: new Date()
       };
 
       setMessages(prev => [...prev, fallbackMessage]);
-      // toast.error('Connection issue - please try again!');
     } finally {
       setIsTyping(false);
     }
   };
 
   const handleQuickQuestion = (question: string) => {
-    setInputText(question);
-    setTimeout(() => {
-      handleSendMessage();
-    }, 100);
+    handleSendMessage(question);
   };
 
   const plantSuggestions = [
@@ -465,7 +452,7 @@ export default function FinalChatbot() {
                   }}
                 />
                 <button
-                  onClick={handleSendMessage}
+                  onClick={() => handleSendMessage()}
                   disabled={!inputText.trim() || isTyping}
                   style={{
                     padding: '12px 16px',

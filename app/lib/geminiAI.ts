@@ -1,8 +1,26 @@
-// app/lib/geminiAI.ts
-const GEMINI_API_KEY = 'AIzaSyDzHhHhNNuDNlOl3T_P9g0ovti5qZ333Ak';
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
 export const getAyurvedicAIResponse = async (userMessage: string): Promise<string> => {
+  // 1. Try enhanced RAG pipeline first (LangChain + ChromaDB + Verified Ayurvedic Texts)
+  try {
+    const ragRes = await fetch('/api/rag/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: userMessage }),
+    });
+
+    if (ragRes.ok) {
+      const data = await ragRes.json();
+      if (data.answer) {
+        return data.answer;
+      }
+    }
+  } catch (ragErr) {
+    console.warn('RAG service fallback, using direct Gemini model:', ragErr);
+  }
+
+  // 2. Direct Gemini Fallback
   console.log('🔑 API Key check:', GEMINI_API_KEY ? `${GEMINI_API_KEY.substring(0, 10)}...` : 'NOT FOUND');
   console.log('🌐 Full URL:', GEMINI_URL);
   
